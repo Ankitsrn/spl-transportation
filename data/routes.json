@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "from": "Port Douglas",
+    "to": "Cairns Airport",
+    "pricing": [
+      {
+        "passengers": "1-2",
+        "price": 160
+      },
+      {
+        "passengers": "3-4",
+        "price": 200
+      },
+      {
+        "passengers": "5+",
+        "price": 250
+      }
+    ],
+    "distance": "67 km",
+    "duration": "55 min"
+  },
+  {
+    "id": 2,
+    "from": "Cairns Airport",
+    "to": "Port Douglas",
+    "pricing": [
+      {
+        "passengers": "1-2",
+        "price": 160
+      },
+      {
+        "passengers": "3-4",
+        "price": 200
+      },
+      {
+        "passengers": "5+",
+        "price": 250
+      }
+    ],
+    "distance": "67 km",
+    "duration": "55 min"
+  }
+]
