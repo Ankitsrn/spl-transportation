@@ -208,8 +208,8 @@ export default function HomePage(props: {
           style={{ backgroundImage: "url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1600&q=80')" }}
         ></div>
         
-        <div className="relative z-20 h-full container mx-auto px-4 pt-20 lg:pt-32 text-center">
-          <div className="max-w-2xl">
+        <div className="relative z-20 h-full container mx-auto px-4 flex items-center justify-center text-center">
+          <div className="max-w-2xl py-10 lg:py-0">
             <span className="inline-block py-1 px-3 rounded-full bg-yellow-400/20 text-yellow-400 text-xs font-bold tracking-wider mb-4 backdrop-blur-sm border border-yellow-400/30">
               PREMIUM TRANSFERS
             </span>
@@ -655,4 +655,4 @@ export default function HomePage(props: {
       <CustomerReviews />  
     </div>
   );
-}
+}   
