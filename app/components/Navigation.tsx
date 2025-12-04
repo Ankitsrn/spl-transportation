@@ -31,15 +31,7 @@ export default function Navigation({
             className="flex items-center gap-1 cursor-pointer group"
             onClick={() => handleNavClick('home')}
           >
-            <div
-              className="
-                p-1 
-                dark:bg-white 
-                dark:shadow-md
-                dark:border dark:border-gray-200
-                lg:dark:bg-transparent lg:dark:shadow-none lg:dark:border-0 pt-0.5 pb-0.5
-              "
-            >
+            <div className="flex items-center p-1 dark:bg-white dark:shadow-md dark:border dark:border-gray-200 lg:dark:bg-transparent lg:dark:shadow-none lg:dark:border-0 pt-0.5 pb-0.5">
               <Image
                 src="/spll.png"
                 width={150}
@@ -48,15 +40,15 @@ export default function Navigation({
                 className="object-contain"
                 priority
               />
-            </div>
               <Image
                 src="/spllo.png"
                 alt="SPL"
                 width={120}
                 height={15}
-                className="object-contain"
+                className="object-contain ml-1"
                 priority={false}
               />
+            </div>
           </div>
 
           {/* Center: Links (Desktop) */}

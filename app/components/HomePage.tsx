@@ -1,9 +1,31 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
 import { CheckCircle, Clock, MapPin, Calendar, Users, Briefcase, Plane, ArrowLeft, ArrowRight, Navigation, AlertCircle } from 'lucide-react';
+import Image from 'next/image';
 import type { BookingFormData, Route } from '../types';
 import { Services } from './Services';
 import CustomerReviews from './CustomerReviews';
+
+const DiscountSticker = () => {
+  return (
+    <div style={{
+      position: 'fixed',
+      top: 'calc(80px + 20px)', // below navbar (h-20 = 80px) + 20px gap
+      right: '20px',
+      zIndex: 9999,
+      cursor: 'pointer'
+    }}>
+      <Image
+        src="/sticker.png"
+        alt="Discount sticker"
+        width={240}
+        height={80}
+        priority={false}
+        style={{ display: 'block', objectFit: 'contain' }}
+      />
+    </div>
+  );
+};
 
 export default function HomePage(props: {
   formData: BookingFormData;
@@ -490,7 +512,7 @@ export default function HomePage(props: {
                         onChange={(e) => handleInputChange('childSeat', e.target.checked)}
                         className="hidden"
                       />
-                      <span className="text-sm font-medium text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white">Child Seat (+$5)</span>
+                      <span className="text-sm font-medium text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white">Child Seat (+$20)</span>
                     </label>
                   </div>
 
